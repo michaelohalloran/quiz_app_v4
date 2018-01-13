@@ -1,0 +1,251 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background: url("https://math.lafayette.edu/wp-content/uploads/sites/65/2011/02/math-photos_homepage-1.jpg") no-repeat fixed;
+}
+
+h1 {
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	color: white;
+	background-color: #0a09ec;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 50px;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+
+.start-matter {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	color: white;
+	padding: 5px;
+	width: 80%;
+	border: 1px solid black;
+	background-color: #0a09ec;
+}
+
+/*BUTTON STYLES*/
+input {
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+	background-color: #b2a4a7;
+	color: #01083f;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+
+input:hover {
+	background-color: #fff9fa;
+	color: #463e77;
+}
+
+/*******************************************************************************************
+//	QUIZ PAGE
+/*****************************************************************************************/
+
+
+input[type="radio"] {
+	padding: 0px;	
+	margin: 0px;
+}
+	
+label {
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	font-size: 28px; 
+	color: #241444;
+	display: inline-block;
+	width: 43%;
+	border: 1px solid black;
+	border-radius: 50px;
+	background-color: #f4c242;
+	margin: 30px;
+	padding: 20px;
+}
+	
+
+legend {
+	background-color: #f4c242;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Garamond;
+	color: #070706;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+#answer-form { /*//used to be question-container styling*/
+	margin: 0 auto;
+	text-align: center;
+	padding: 2px;
+	background-color: #0a09ec;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.status, .score {
+	display: inline;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1.25em;
+	color: black;
+	padding: 5px;
+	margin: 10px;
+}
+
+#submitBtn {
+	margin: 10px;
+}
+
+#nextBtn {
+	display: none;
+	margin: 10px;
+}
+
+.score-container {
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	background-color: #0a09ec;
+	border: 2px solid black;
+}
+
+
+
+/*checkmark and X mark*/
+.feedback-mark {
+	width: 20px;
+}
+
+#feedback-message {
+	display: none;
+	margin: 0 auto;
+	border: 1px solid black;
+	background-color: #d5f7b2;
+	color: #00ed1f;
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+
+
+/*******************************************************************************************
+//	FINAL PAGE
+***************************************************************************************
+*/
+
+.final-container {
+	background: radial-gradient(blue 60%, orange 65%, purple 70%, yellow 90%);
+	border: 2px double yellow;
+	width: 80%;
+	font-size: 30px;
+	font-weight: bold;
+	color: #f7e8b9;
+	text-align: center;
+	text-shadow: 1px 1px #d12900;
+	margin: 0 auto;
+	border-radius: 50px;
+	padding: 15px;	
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+.final-button {
+	background-color: #0a09ec;
+	width: 80%;
+	font-size: 30px;
+	font-weight: bold;
+	color: #f7e8b9;
+	text-align: center;
+	text-shadow: 2px 2px #d12900;
+	margin: 0 auto;
+	border-radius: 50px;
+	padding: 15px;	
+	margin-top: 60px;
+}
+
+.final-score {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#play-again {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+@media (max-width: 800px) {
+	
+	body {
+		font-size: x-small;
+	}
+
+	.status, .score {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.radioBtn {
+		display: block;	
+		width: 100%;
+
+	}
+
+	#submitBtn, #nextBtn {
+		display: block;
+		width: 45%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	#nextBtn {
+		display: none;
+	}
+
+	#feedback-message {
+		height: auto;
+		font-size: 1.5em;
+	}
+
+	.feedback-mark {
+		height: auto;
+		width: 20px;
+	}
+
+
+	#play-again {
+		display: block;
+		width: 50%;
+		font-size: x-small;
+	}
+
+
+}

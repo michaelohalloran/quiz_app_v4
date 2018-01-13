@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Number Patterns Quiz</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<header>
+		<div class="title">
+			<h1>Test Your Numerical IQ</h1>
+		</div>	
+	</header>
+	
+	
+	<section class="start-section">
+		<div class="start-matter">
+			<h4>How good are you at logical reasoning and recognizing patterns?  Click "Start" to find out.</h4>
+			<input type="button" id="startBtn" value="Click to Start">
+		</div>
+	</section>
+
+	<section class="quiz-section">
+		<form id="answer-form">	
+			<fieldset>	
+				<div id="feedback-message"></div>
+				<legend id="question-show"></legend>
+				<div id="answers"></div>			
+			</fieldset>
+		</form>	
+			
+		
+
+		<div class="score-container">
+			<p class="status">Question: <span id="current-question"></span>/10</p>
+			<p class="score">Correct: <span id="current-correct"></span></p>
+			<p class="score">Incorrect: <span id="current-wrong"></span></p>
+			<input type="button" id="submitBtn" value="Submit">
+			<input type="button" id="nextBtn" value="Next">
+		</div>
+
+
+
+	</section>
+
+	<section class="final-section">
+		<div class="final-container">
+			<p class="final-result">Your Final Score: <span id="final-score"></span>/10</p>
+		</div>	
+		<div class="final-button">
+			<input type="button" id="play-again" value="Play again?">
+		</div>
+		
+	</section>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="dom.js"></script>
+
+</body>
+</html>
