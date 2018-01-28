@@ -82,7 +82,7 @@ function generateQuestion() {
 	for(let i = 0; i < questions[currentQuestion].choice.length; i++) {
 		$answers.append(`
 			<label for='option${i}'>
-			<input type="radio" class="radioBtn" id="option${i}" name="userPick" required="required" value='${questions[currentQuestion].choice[i]}'>
+			<input type="radio" class="radioBtn" id="option${i}" aria-labelledby="radioGroup" name="userPick" required="required" value='${questions[currentQuestion].choice[i]}'>
 			${questions[currentQuestion].choice[i]}</label>
 		`);		
 	}
@@ -91,7 +91,7 @@ function generateQuestion() {
 
 //cannotSubmit runs inside clickSubmit function, if user tries to submit without answering
 function cannotSubmit() {
-	$feedbackDisplay.text(mustAnswer).show().fadeOut(2000);
+	$feedbackDisplay.text(mustAnswer).show().fadeOut(3000);
 }
 
 //giveFeedback receives a boolean from checkAnswer,and shows the appropriate feedback string

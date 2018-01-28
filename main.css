@@ -141,8 +141,8 @@ legend {
 	display: none;
 	margin: 0 auto;
 	border: 1px solid black;
-	background-color: #d5f7b2;
-	color: #00ed1f;
+	background-color: #eaf1e4;
+	color: #0a150b;
 	font-size: 24px;
 	font-weight: bold;
 	border-radius: 20px;
@@ -157,14 +157,15 @@ legend {
 */
 
 .final-container {
-	background: radial-gradient(blue 60%, orange 65%, purple 70%, yellow 90%);
-	border: 2px double yellow;
+	background: #0a09ec;
+	/*radial-gradient(blue 90%, orange 65%, purple 70%, yellow 90%);*/
+	border: 2px double gray;
 	width: 80%;
 	font-size: 30px;
 	font-weight: bold;
 	color: #f7e8b9;
 	text-align: center;
-	text-shadow: 1px 1px #d12900;
+/*	text-shadow: 1px 1px #d12900;*/
 	margin: 0 auto;
 	border-radius: 50px;
 	padding: 15px;	
